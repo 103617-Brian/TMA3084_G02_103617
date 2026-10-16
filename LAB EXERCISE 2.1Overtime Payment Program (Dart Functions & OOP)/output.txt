@@ -1,0 +1,2 @@
+PS C:\Users\User\Documents\Lecture Files\Year 3 Sem 1 2026-27\TMA3084 Sem 1 26-27 Software Engineering Lab\Lab Code\Lab03> dart main.dart
+Total Salary = $5070.0 USD
