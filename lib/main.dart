@@ -29,9 +29,9 @@ class MenuScreen extends StatelessWidget {
       body: const SafeArea(
         child: Column(
           children: [
-            MenuCard('VegetablePZ.png', 'Vegetable Pizza'),
-            MenuCard('cheesePZ.png', 'Cheese Pizza'),
-            MenuCard('Fries.png', 'Box of Fries'),
+            MenuCard('pizza_3.png', 'Vegetable Pizza'),
+            MenuCard('pizza_1.png', 'Cheese Pizza'),
+            MenuCard('fries.png', 'Box of Fries'),
           ],
         ),
       ),
