@@ -3,13 +3,27 @@ name: Flutter CI
 
 on:
   push:
-    branches: [main, "feature/**"]
+    branches:
+      - main
+      - "feature/**"
+    paths:
+      - "lab_03_lesson_05/**"
+      - ".github/workflows/flutter-ci.yml"
+
   pull_request:
-    branches: [main]
+    branches:
+      - main
+    paths:
+      - "lab_03_lesson_05/**"
+      - ".github/workflows/flutter-ci.yml"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: lab_03_lesson_05
 
     steps:
       - name: Checkout repository

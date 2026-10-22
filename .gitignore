@@ -1,0 +1,18 @@
+# Generated Flutter files at repository root
+.dart_tool/
+build/
+.idea/
+*.iml
+
+# Generated Flutter platform files at repository root
+android/local.properties
+ios/Flutter/ephemeral/
+ios/Flutter/Generated.xcconfig
+
+# Accidental/generated files at repository root
+/.dart_tool/
+/build/
+/.idea/
+/*.iml
+/android/
+/ios/
