@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
- 
+
 const TextStyle itemStyle = TextStyle(
   color: Colors.white,
   fontWeight: FontWeight.bold,
 );
- 
+
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
- 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +16,7 @@ class MenuScreen extends StatelessWidget {
         foregroundColor: Colors.white,
         title: const Text('Android ATC Pizza Place'),
       ),
-            body: Column(
+      body: Column(
         children: [
           GestureDetector(
             onTap: () {
@@ -25,52 +25,34 @@ class MenuScreen extends StatelessWidget {
             child: Card(
               color: Colors.orange,
               child: ListTile(
-                leading: Image.asset(
-                  'assets/images/pizza_1.png',
-                  width: 40,
-                ),
-                title: const Text(
-                  'Vegetable Pizza',
-                  style: itemStyle,
-                ),
+                leading: Image.asset('assets/images/pizza_1.png', width: 40),
+                title: const Text('Vegetable Pizza', style: itemStyle),
               ),
             ),
           ),
 
-                    GestureDetector(
+          GestureDetector(
             onTap: () {
               Navigator.pushNamed(context, 'cheese');
             },
             child: Card(
               color: Colors.orange,
               child: ListTile(
-                leading: Image.asset(
-                  'assets/images/pizza_2.png',
-                  width: 40,
-                ),
-                title: const Text(
-                  'Cheese Pizza',
-                  style: itemStyle,
-                ),
+                leading: Image.asset('assets/images/pizza_2.png', width: 40),
+                title: const Text('Cheese Pizza', style: itemStyle),
               ),
             ),
           ),
 
-                    GestureDetector(
+          GestureDetector(
             onTap: () {
               Navigator.pushNamed(context, 'fries');
             },
             child: Card(
               color: Colors.orange,
               child: ListTile(
-                leading: Image.asset(
-                  'assets/images/fries.png',
-                  width: 40,
-                ),
-                title: const Text(
-                  'Box of Fries',
-                  style: itemStyle,
-                ),
+                leading: Image.asset('assets/images/fries.png', width: 40),
+                title: const Text('Box of Fries', style: itemStyle),
               ),
             ),
           ),
