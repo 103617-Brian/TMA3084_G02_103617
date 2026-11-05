@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
- 
+
 class FriesScreen extends StatelessWidget {
   const FriesScreen({super.key});
- 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,16 +10,11 @@ class FriesScreen extends StatelessWidget {
         backgroundColor: Colors.amberAccent,
         title: const Text('Box of Fries'),
       ),
-            body: Center(
+      body: Center(
         child: Column(
           children: [
-            Image.asset(
-              'assets/images/fries.png',
-              width: 200,
-            ),
-            const Text(
-              'Fries are crispy and delicious!',
-            ),
+            Image.asset('assets/images/fries.png', width: 200),
+            const Text('Fries are crispy and delicious!'),
           ],
         ),
       ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
- 
+
 class VegetablePizzaScreen extends StatelessWidget {
   const VegetablePizzaScreen({super.key});
- 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,13 +10,10 @@ class VegetablePizzaScreen extends StatelessWidget {
         backgroundColor: Colors.amberAccent,
         title: const Text('Vegetable Pizza'),
       ),
-            body: Center(
+      body: Center(
         child: Column(
           children: [
-            Image.asset(
-              'assets/images/pizza_1.png',
-              width: 200,
-            ),
+            Image.asset('assets/images/pizza_1.png', width: 200),
             const Text(
               'Vegetable Pizza is a pizza with mixed '
               'vegetable mix on top of it.',
